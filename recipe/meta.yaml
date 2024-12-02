@@ -1,5 +1,5 @@
 {% set name = "safehttpx" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/safehttpx-{{ version }}.tar.gz
-  sha256: 6e1bedf7767213300da5e4cb7e823e98edc934f17ca192d2e585111a2b899149
+  sha256: b356bfc82cee3a24c395b94a2dbeabbed60aff1aa5fa3b5fe97c4f2456ebce42
 
 build:
   noarch: python
@@ -37,7 +37,8 @@ about:
   license: Apache-2.0
   license_file: LICENSE
   home: https://github.com/gradio-app/safehttpx
-  description: A small Python library created to help developers protect their applications from Server Side Request Forgery (SSRF) attacks. It implements an **asynchronous GET method** called `safehttpx.get()`, which is a wrapper around `httpx.AsyncClient.get()` while performing DNS validation on the supplied URL using [Google DNS](https://developers.google.com/speed/public-dns). 
+  description: A small Python library created to help developers protect their applications from Server Side Request Forgery (SSRF) attacks. It implements an **asynchronous GET method** called `safehttpx.get()`, which is a wrapper around `httpx.AsyncClient.get()` while performing DNS validation on the supplied URL using
+    [Google DNS](https://developers.google.com/speed/public-dns).
 
 extra:
   recipe-maintainers:
