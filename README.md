@@ -9,7 +9,9 @@ Package license: Apache-2.0
 
 Summary: A small Python library created to help developers protect their applications from Server Side Request Forgery (SSRF) attacks.
 
-A small Python library created to help developers protect their applications from Server Side Request Forgery (SSRF) attacks. It implements an **asynchronous GET method** called `safehttpx.get()`, which is a wrapper around `httpx.AsyncClient.get()` while performing DNS validation on the supplied URL using [Google DNS](https://developers.google.com/speed/public-dns).
+A small Python library created to help developers protect their applications from Server Side Request Forgery (SSRF) attacks. It implements an **asynchronous GET method** called `safehttpx.get()`, which is a wrapper around `httpx.AsyncClient.get()` while performing DNS validation on the supplied URL using
+[Google DNS](https://developers.google.com/speed/public-dns).
+
 
 Current build status
 ====================
@@ -146,7 +148,4 @@ Feedstock Maintainers
 =====================
 
 * [@HeavyTony2](https://github.com/HeavyTony2/)
-
-
-<!-- dummy commit to enable rerendering -->
 
