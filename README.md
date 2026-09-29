@@ -18,11 +18,10 @@ Current build status
 ====================
 
 
-<table><tr>
-    <td>All platforms:</td>
+<table><tr><td>All platforms:</td>
     <td>
-      <a href="https://github.com/conda-forge/safehttpx-feedstock/actions/workflows/conda-build.yml">
-        <img src="https://github.com/conda-forge/safehttpx-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=24001&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/safehttpx-feedstock?branchName=main">
       </a>
     </td>
   </tr>
@@ -45,73 +44,31 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-How to use
-----------
-
-<details>
-<summary>With conda</summary>
+Once the `conda-forge` channel has been enabled, `safehttpx` can be installed with `conda`:
 
 ```
 conda install safehttpx
 ```
 
-</details>
-
-<details>
-<summary>With mamba</summary>
+or with `mamba`:
 
 ```
 mamba install safehttpx
 ```
 
-</details>
-
-<details>
-<summary>With pixi</summary>
-
-```
-# for adding to your local project
-pixi add safehttpx
-# for installing globally
-pixi global install safehttpx
-```
-
-</details>
-
-Search package versions
------------------------
-
-It is possible to list all of the versions of `safehttpx` available on your platform:
-
-<details>
-<summary>With conda</summary>
+It is possible to list all of the versions of `safehttpx` available on your platform with `conda`:
 
 ```
 conda search safehttpx --channel conda-forge
 ```
 
-</details>
-
-<details>
-<summary>With mamba</summary>
+or with `mamba`:
 
 ```
 mamba search safehttpx --channel conda-forge
 ```
 
-</details>
-
-<details>
-<summary>With pixi</summary>
-
-```
-pixi search safehttpx --channel conda-forge
-```
-
-</details>
-
-<details>
-<summary>With mamba repoquery, which may provide more information</summary>
+Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
@@ -123,8 +80,6 @@ mamba repoquery whoneeds safehttpx --channel conda-forge
 # List dependencies of `safehttpx`:
 mamba repoquery depends safehttpx --channel conda-forge
 ```
-
-</details>
 
 
 About conda-forge
